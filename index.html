@@ -66,7 +66,7 @@
     <script src="https://d3js.org/d3-contour.v2.min.js"></script>
     <script>
         function visualizeCTScan(binCounts) {
-            d3.csv("data/Data_CT.csv").then(function (data) {
+            d3.csv("Data_CT.csv").then(function (data) {
                 const values = data.map(d => +d[Object.keys(d)[0]]);
                 const width = 800;
                 const height = 600;
